@@ -2,7 +2,7 @@ from fastapi import APIRouter
 import importlib
 import pkgutil
 
-router = APIRouter()
+router = APIRouter(prefix="/api")
 
 package_name = "fastapi_app.routers.api"
 package = importlib.import_module(package_name)
