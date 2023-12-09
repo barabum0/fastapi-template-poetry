@@ -4,7 +4,7 @@ import pkgutil
 
 router = APIRouter()
 
-package_name = "url_shortener.routers.api"
+package_name = "fastapi_app.routers.api"
 package = importlib.import_module(package_name)
 
 routers = []

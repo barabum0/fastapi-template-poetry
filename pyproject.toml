@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "url_shortener"
+name = "fastapi_app"
 version = "0.0.1"
-description = "A Python-based URL shortener built with FastAPI"
+description = "A simple FastAPI app"
 authors = ["sushka <barabum@duck.com>"]
 readme = "README.md"
 
@@ -18,7 +18,7 @@ black = {extras = ["d"], version = "^23.11.0"}
 
 
 [tool.poetry.scripts]
-url_shortener = "url_shortener.__main__:main"
+app = "fastapi_app.__main__:main"
 
 
 [build-system]

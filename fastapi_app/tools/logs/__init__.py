@@ -2,7 +2,7 @@ import sys
 
 from loguru import logger
 
-from url_shortener.tools.logs.handlers import UvicornHandler
+from fastapi_app.tools.logs.handlers import UvicornHandler
 
 
 def configure_logger():
