@@ -1,41 +1,47 @@
+<div align="center">
+
 # FastAPI Project Template with Loguru
 
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
-## Overview
+</div>
 
-This repository is a template for a **minimal FastAPI project** enhanced with **Loguru** for logging, managed with **Poetry** for dependency resolution.
-## Features
+## About 📘
 
-- **FastAPI Framework**: Utilizing the latest FastAPI framework for high performance and easy development.
-- **Loguru Integration**: Pre-configured Loguru for advanced logging capabilities.
-- **Poetry for Dependency Management**: Simplified package management and dependency resolution.
-- **Black code style**: The best Python code formatter ever.
+This repository serves as a template for a **minimal FastAPI project** with enhanced logging using **Loguru**. It's managed with **Poetry** for efficient dependency resolution, ensuring a robust and maintainable codebase.
 
+## Features 🌟
 
-## Usage
+- **FastAPI Framework**: Utilizes the latest FastAPI framework for high performance and ease of development.
+- **Loguru Integration**: Includes pre-configured Loguru for superior logging capabilities.
+- **Poetry for Dependency Management**: Employs Poetry to simplify package management and dependency resolution.
+- **Black Code Style**: Adheres to the Black code style for consistent and clean Python code.
 
-### Just press the button on **GitHub**. (or click on the image below)
-[![Use this template -> Create a new repository](https://docs.github.com/assets/cb-77734/mw-1440/images/help/repository/use-this-template-button.webp)](https://github.com/new?template_name=fastapi-template&template_owner=barabum0)
+## Usage 🛠️
 
+To use this template, simply press the button on GitHub to create a new repository based on this template.
 
-## Installation
+## Installation 💻
 
 ```shell
 poetry install
 ```
 
-## Running
+## Running 🏃‍♂️
 
 ```shell
 poetry shell
 poetry run app
 ```
 
-## Contribution
+## Troubleshooting 🔍
+
+For any issues or troubleshooting queries, please refer to the [Issues section](https://github.com/barabum0/fastapi-template/issues) of this GitHub repository.
+
+## Contribution 👥
 
 Contributions are welcome. Please fork the repository, make your changes, and submit a pull request.
 
-## License
+## License 📜
 
 This project is open-sourced under the [MIT License](LICENSE).
