@@ -14,7 +14,7 @@ def main():
 
     app.include_router(main_router)
 
-    uvicorn.run("app.__main__:app", log_config=get_uvicorn_log_config())
+    uvicorn.run("fastapi_app.__main__:app", log_config=get_uvicorn_log_config())
 
 
 if __name__ == "__main__":

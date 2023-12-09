@@ -53,13 +53,13 @@ def get_uvicorn_log_config() -> dict:
                 "stream": "ext://sys.stdout",
             },
             "uvicorn": {
-                "()": "url_shortener.tools.logs.handlers.UvicornHandler",
+                "()": "fastapi_app.tools.logs.handlers.UvicornHandler",
             },
             "uvicorn.error": {
-                "()": "url_shortener.tools.logs.handlers.UvicornHandler",
+                "()": "fastapi_app.tools.logs.handlers.UvicornHandler",
             },
             "uvicorn.access": {
-                "()": "url_shortener.tools.logs.handlers.UvicornHandler",
+                "()": "fastapi_app.tools.logs.handlers.UvicornHandler",
             },
         },
         "loggers": {
