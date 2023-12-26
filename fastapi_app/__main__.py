@@ -8,7 +8,7 @@ from fastapi_app.tools.logs import configure_logger, get_uvicorn_log_config
 app = FastAPI()
 
 
-def main():
+def main() -> None:
     configure_logger()
     logger.info("Starting...")
 

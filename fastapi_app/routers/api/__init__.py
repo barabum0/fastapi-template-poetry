@@ -9,7 +9,7 @@ package = importlib.import_module(package_name)
 
 routers = []
 
-for _, module_name, _ in pkgutil.iter_modules(package.__path__):
+for _, module_name, _ in pkgutil.iter_modules(package.__path__):  # type: ignore
     module = importlib.import_module(f"{package_name}.{module_name}")
     if "router" in dir(module):
         routers.append(getattr(module, "router"))

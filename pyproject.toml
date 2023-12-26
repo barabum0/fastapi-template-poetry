@@ -22,10 +22,14 @@ isort = "^5.13.2"
 pytest = "^7.4.3"
 pytest-asyncio = "^0.23.2"
 devtools = "^0.12.2"
+httpx = "^0.26.0"
 
 [tool.isort]
 profile = "black"
 src_paths = ["."]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [tool.mypy]
 python_version = "3.11"
