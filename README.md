@@ -3,8 +3,9 @@
 # FastAPI Project Template with Loguru
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Formatted with: isort](https://img.shields.io/badge/formatted%20with-isort-blue.svg)](https://github.com/psf/black)
+[![Formatted with: isort](https://img.shields.io/badge/formatted%20with-isort-blue.svg)](https://pycqa.github.io/isort/)
 [![Checked with mypy](https://www.mypy-lang.org/static/mypy_badge.svg)](https://mypy-lang.org/)
+[![Tested with pytest](https://img.shields.io/badge/tested%20with-pytest-0A9EDC.svg)](https://docs.pytest.org/en/stable/)
 
 </div>
 
@@ -18,6 +19,9 @@ This repository serves as a template for a **minimal FastAPI project** with enha
 - **Loguru Integration**: Includes pre-configured Loguru for superior logging capabilities.
 - **Poetry for Dependency Management**: Employs Poetry to simplify package management and dependency resolution.
 - **Black Code Style**: Adheres to the Black code style for consistent and clean Python code.
+- **isort for Import Sorting**: Ensures imports are neatly organized and consistent using isort.
+- **mypy for Static Type Checking**: Incorporates mypy to catch errors and ensure type safety in your codebase.
+- **pytest for Testing**: Leverages pytest for comprehensive and efficient testing of your application.
 
 ## Usage 🛠️
 
