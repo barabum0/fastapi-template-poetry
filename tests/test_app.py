@@ -1,4 +1,7 @@
 # mypy: ignore_errors
+import random
+import string
+
 import pytest
 from fastapi.testclient import TestClient
 from fastapi_app.routers import router as main_router
@@ -13,13 +16,8 @@ def client() -> TestClient:
     return client
 
 
-def test_hello_world_1(client: TestClient):
-    response = client.post("/api/hi", json={"name": "Roman"})
-    assert response.status_code == 200
-    assert response.json() == {"greeting": "Hello, Roman!"}
-
-
-def test_hello_world_2(client: TestClient):
-    response = client.post("/api/hi", json={"name": "Alex"})
-    assert response.status_code == 200
-    assert response.json() == {"greeting": "Hello, Alex!"}
+def test_hello_world(client: TestClient):
+    for name in ["".join(random.choices(string.ascii_letters, k=10)) for _ in range(10)]:
+        response = client.post("/api/hi", json={"name": name})
+        assert response.status_code == 200
+        assert response.json() == {"greeting": f"Hello, {name}!"}
