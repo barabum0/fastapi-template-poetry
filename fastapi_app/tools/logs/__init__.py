@@ -1,6 +1,6 @@
 import sys
 
-from loguru import logger, Record
+from loguru import logger
 
 from fastapi_app.tools.logs.handlers import UvicornHandler
 
@@ -9,7 +9,7 @@ def configure_logger() -> None:
     log_format_all = "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>\n"
     log_format_request = "<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | {message}\n"
 
-    def log_format(record: Record) -> str:
+    def log_format(record: "Record") -> str:  # type: ignore
         if record["level"].name == "REQUEST":
             return log_format_request
         return log_format_all
