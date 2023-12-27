@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from loguru import logger
 
 from fastapi_app.routers import router as main_router
-from fastapi_app.tools.logs import configure_logger, get_uvicorn_log_config
+from fastapi_app.services.logs import configure_logger, get_uvicorn_log_config
 
 app = FastAPI()
 
