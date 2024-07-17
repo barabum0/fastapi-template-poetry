@@ -22,6 +22,7 @@ This repository serves as a template for a **minimal FastAPI project** with enha
 - **isort for Import Sorting**: Ensures imports are neatly organized and consistent using isort.
 - **mypy for Static Type Checking**: Incorporates mypy to catch errors and ensure type safety in your codebase.
 - **pytest for Testing**: Leverages pytest for comprehensive and efficient testing of your application.
+- 
 
 ## Usage 🛠️
 
