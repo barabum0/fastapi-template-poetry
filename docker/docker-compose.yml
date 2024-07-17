@@ -1,0 +1,12 @@
+version: 'v1'
+
+services:
+  fastapi-app:
+    image: ghcr.io/suvvyai/fastapi-app:latest
+    restart: unless-stopped
+    healthcheck:
+      test: [ "CMD", "curl", "--fail", "http://0.0.0.0:8080/health" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s

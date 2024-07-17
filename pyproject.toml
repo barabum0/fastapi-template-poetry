@@ -1,6 +1,5 @@
 [tool.poetry]
 name = "fastapi_app"
-version = "0.0.1"
 description = "A simple FastAPI app"
 authors = ["sushka <barabum@duck.com>"]
 readme = "README.md"
@@ -15,7 +14,7 @@ loguru = "^0.7.2"
 pydantic = "^2.5.2"
 
 [tool.poetry.scripts]
-app = "fastapi_app.__main__:main"
+app = "main:main"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.12.1"

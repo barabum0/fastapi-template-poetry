@@ -1,0 +1,4 @@
+services:
+  test:
+    image: suvvyai/localtest:latest
+    entrypoint: "poetry run pytest"
