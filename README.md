@@ -26,6 +26,11 @@ This repository serves as a template for a **minimal FastAPI project** with enha
 ## Usage 🛠️
 
 To use this template, simply press the button on GitHub to create a new repository based on this template.
+Next, rename the project and docker image in following files
+- [`pyproject.toml`](pyproject.toml)
+- [`docker-compose.yml`](docker-compose.yml)
+- [`.github/workflows/build-docker-image-release.yml`](.github/workflows/build-docker-image-release.yml)
+  - **and uncomment the `on` section in this file for it to work**
 
 ## Installation 💻
 
