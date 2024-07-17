@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from fastapi_app.types.requests.api.hi import HelloWorldRequest, HelloWorldResponse
+from src.types.requests.api.hi import HelloWorldRequest, HelloWorldResponse
 
 router = APIRouter()
 

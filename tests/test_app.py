@@ -4,8 +4,8 @@ import string
 
 import pytest
 from fastapi.testclient import TestClient
-from fastapi_app.routers import router as main_router
-from fastapi_app.__main__ import app
+from src.routers import router as main_router
+from src.__main__ import app
 
 
 @pytest.fixture()

@@ -2,7 +2,7 @@ import sys
 
 from loguru import logger
 
-from fastapi_app.services.logs.handlers import UvicornHandler
+from src.services.logs.handlers import UvicornHandler
 
 
 def configure_logger() -> None:

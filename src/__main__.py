@@ -2,8 +2,8 @@ import uvicorn
 from fastapi import FastAPI
 from loguru import logger
 
-from fastapi_app.routers import router as main_router
-from fastapi_app.services.logs import configure_logger, get_uvicorn_log_config
+from src.routers import router as main_router
+from src.services.logs import configure_logger, get_uvicorn_log_config
 
 app = FastAPI()
 

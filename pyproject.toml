@@ -4,6 +4,8 @@ version = "0.0.1"
 description = "A simple FastAPI app"
 authors = ["sushka <barabum@duck.com>"]
 readme = "README.md"
+package-mode = false
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -37,7 +39,3 @@ disallow_untyped_defs = true
 ignore_missing_imports = true
 disable_error_code = "attr-defined"
 exclude = '^tests/'  # put --exclude="^tests/" as argument in PyCharm mypy plugin
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
