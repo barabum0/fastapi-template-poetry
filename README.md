@@ -1,3 +1,6 @@
+> [!TIP]
+> I recommend using my new repository template: [fastapi-template-uv](https://github.com/barabum0/fastapi-template-uv). It employs modern and more efficient tools — uv and ruff - instead of poetry and black.
+
 <div align="center">
 
 # FastAPI Project Template with Loguru
